@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="728.0" style="-fx-background-color: #ffdab9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GererserviceController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/jimmy-fallon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="50.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Jimmy Fallon" textFill="#e7e5e5">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="service" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_service" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="service" textFill="#e7e5e5">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Home_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="livresion" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_levrison" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Livraison">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="profile" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_profil" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="profile">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Person_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="eventbuttn" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#got_vebement" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="EVENEMENT">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="porduitbt" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goto_produit" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Produit">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Box_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="comainter" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goto_comanter" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="comanter">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Slider__32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#deconnect" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Sign Out">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Sign_Out_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+               <children>
+                  <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="178.0" prefHeight="42.0" prefWidth="712.0" spacing="80.0" style="-fx-background-color: #02030A;" />
+                        <TextField fx:id="saisi_id_s" layoutX="166.0" layoutY="42.0" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: #dcdcdc;" />
+                        <TextField fx:id="saisi_type_s" layoutX="166.0" layoutY="139.0" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #dcdcdc;" />
+                        <TextField fx:id="saisi_description_s" layoutX="166.0" layoutY="188.0" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #dcdcdc;" />
+                        <Text fx:id="IDLABEL" fill="WHITE" layoutX="96.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+                        <Text fill="WHITE" layoutX="88.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TITRE:" />
+                        <Text fill="WHITE" layoutX="90.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE:" />
+                        <Text fill="WHITE" layoutX="67.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPTION:" />
+                        <Button fx:id="ajoute_s_bt" layoutX="91.0" layoutY="328.0" mnemonicParsing="false" onAction="#ajouterservice" style="-fx-background-color: #54B0FF;" text="ajouter " />
+                        <Button fx:id="modifier_s_bt" layoutX="177.0" layoutY="328.0" mnemonicParsing="false" onAction="#modifierservice" style="-fx-background-color: #54B0FF;" text="modifier " />
+                        <Button fx:id="supprimer_s_bt" layoutX="269.0" layoutY="328.0" mnemonicParsing="false" onAction="#supprimerservice" style="-fx-background-color: #54B0FF;" text="supprimer " />
+                        <TextField fx:id="saisi_titre_s" layoutX="166.0" layoutY="91.0" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #dcdcdc;" />
+                        <Text fill="WHITE" layoutX="92.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lieu:" />
+                        <TextField fx:id="saisi_lieu_s" layoutX="166.0" layoutY="245.0" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #dcdcdc;" />
+                        <TableView fx:id="servicetable" layoutX="422.0" layoutY="79.0" onMouseClicked="#choisirService" prefHeight="286.0" prefWidth="302.0">
+                          <columns>
+                            <TableColumn fx:id="titrestv" prefWidth="75.0" text="titre" />
+                              <TableColumn fx:id="typestv" prefWidth="75.0" text="type" />
+                              <TableColumn fx:id="descriptionstv" prefWidth="75.0" text="description" />
+                              <TableColumn fx:id="lieustv" prefWidth="75.0" text="lieu" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="excel_s_bt" layoutX="469.0" layoutY="375.0" mnemonicParsing="false" onAction="#excelservice" style="-fx-background-color: #add8e6;" text="télécharger" />
+                        <Button fx:id="stat_s_bt" layoutX="582.0" layoutY="375.0" mnemonicParsing="false" onAction="#statistiquedescription" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #add8e6;" text="statistique" />
+                        <Button fx:id="back_bt" layoutX="77.0" layoutY="403.0" mnemonicParsing="false" onAction="#back" text="back" />
+                        <Button fx:id="rapport" layoutX="545.0" layoutY="37.0" mnemonicParsing="false" onAction="#rapportonaction" style="-fx-background-color: #add8e6;" text="rapport" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+         <effect>
+            <DropShadow color="#1b1eeb" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

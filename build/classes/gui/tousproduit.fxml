@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="imageview" prefHeight="177.0" prefWidth="435.0" style="-fx-background-color: #ffaf7a;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TousproduitController">
+   <children>
+      <Label fx:id="nomProduirLabel" layoutX="235.0" layoutY="14.0" prefHeight="53.0" prefWidth="200.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="descriptionLabel" layoutX="229.0" layoutY="82.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="prixlabel" layoutX="229.0" layoutY="124.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="image_de_produit" fitHeight="150.0" fitWidth="200.0" layoutX="8.0" layoutY="7.0" onMouseClicked="#go_to_reduction" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="148.0" prefWidth="246.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LevrisonController">
+   <children>
+      <Text fx:id="date_liv" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="136.13671875" />
+      <Text fx:id="type_live" layoutX="14.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="136.13671875" />
+      <Text fx:id="adresse_liv" layoutX="14.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="136.13671875" />
+      <ImageView fitHeight="16.0" fitWidth="246.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

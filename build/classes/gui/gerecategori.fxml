@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1164.0" style="-fx-background-color: #7f7f7f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GerecategoriController">
+   <children>
+      <AnchorPane layoutX="-27.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="1350.0" style="-fx-background-color: #02030A;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/jimmy-fallon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="50.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Back" textFill="#e7e5e5">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="livrure" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_livreuru" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Livreur" textFill="#e7e5e5">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Home_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="levrision" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_livridipon" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Livraison">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_user" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="USER">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Person_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="categbtn" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_cat" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Categorie">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="prodbt" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_prod" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Produit">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Box_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="event" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#go_to_event" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Evénement">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Slider__32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#deconnect" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Sign Out">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Sign_Out_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+               <children>
+                  <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="816.0">
+                     <children>
+                        <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="749.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Search_52px.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="8.0" layoutY="69.0" prefHeight="605.0" prefWidth="290.0" style="-fx-background-color: #ffaf7a;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie">
+                                 <font>
+                                    <Font name="Courier New" size="48.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Categorie" wrappingWidth="315.13671875">
+                                 <font>
+                                    <Font name="Courier New" size="24.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="saissir_Categorie" />
+                              <Text fx:id="valid_Categorie" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="315.13671875">
+                                 <font>
+                                    <Font name="Courier New" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Separator prefHeight="29.0" prefWidth="316.0" />
+                              <Button fx:id="ajouter_Categorie" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ajouterCategorie" prefHeight="48.0" prefWidth="329.0" style="-fx-background-color: #1b98e00d;" text="Ajouter Categorie" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Separator prefHeight="29.0" prefWidth="316.0" />
+                              <Button fx:id="modifier_Categorie" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#modifCategorie" prefHeight="48.0" prefWidth="321.0" style="-fx-background-color: #1b98e00d;" text="Modifier Categorie" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reduction">
+                                 <font>
+                                    <Font name="Courier New" size="48.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New code" wrappingWidth="315.13671875">
+                                 <font>
+                                    <Font name="Courier New" size="24.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="saisir_code_reduction" />
+                              <Separator prefHeight="29.0" prefWidth="316.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="valeur de redction" wrappingWidth="315.13671875">
+                                 <font>
+                                    <Font name="Courier New" size="24.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="saisir_call" />
+                              <Button fx:id="ajouterec" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ajouterreduction" prefHeight="48.0" prefWidth="329.0" style="-fx-background-color: #1b98e00d;" text="Ajouter recution" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <ComboBox fx:id="box_emailuser" prefHeight="25.0" prefWidth="314.0" promptText="select mail" />
+                              <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#sentmail" prefHeight="48.0" prefWidth="329.0" style="-fx-background-color: #1b98e00d;" text="send cod to user" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Separator prefHeight="29.0" prefWidth="316.0" />
+                              <Button fx:id="modifier_Categorie1" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#modifierReduction" prefHeight="48.0" prefWidth="321.0" style="-fx-background-color: #1b98e00d;" text="Modifier Reduction" textFill="WHITE">
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <TableView fx:id="table_Categorie" layoutX="324.0" layoutY="69.0" onMouseClicked="#select_Categorie" prefHeight="286.0" prefWidth="557.0" style="-fx-background-color: #FFFFFF;">
+                          <columns>
+                            <TableColumn fx:id="id_Categorie" prefWidth="75.0" text="ID Categorie" />
+                            <TableColumn fx:id="nom_Categorie" prefWidth="75.0" text="Nom Categorie" />
+                              <TableColumn fx:id="delate_Categorie" prefWidth="75.0" text="Suprimer" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <TableView fx:id="tab_Reduction" layoutX="320.0" layoutY="355.0" onMouseClicked="#select_reduction" prefHeight="322.0" prefWidth="566.0">
+                          <columns>
+                            <TableColumn fx:id="Reduction_code" prefWidth="75.0" text="code" />
+                            <TableColumn fx:id="Reduction_val" prefWidth="75.0" text="valeur de redction" />
+                              <TableColumn fx:id="Reduction_suprimer" prefWidth="75.0" text="suprimer" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <ImageView fx:id="QrCode" fitHeight="150.0" fitWidth="166.0" layoutX="890.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+         <effect>
+            <DropShadow color="#1b1eeb" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

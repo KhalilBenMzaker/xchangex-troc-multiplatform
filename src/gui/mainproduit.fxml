@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="735.0" style="-fx-background-color: #7f7f7f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainproduitController">
+   <children>
+      <VBox prefHeight="669.0" prefWidth="256.0" style="-fx-background-color: #ffaf7a;">
+         <children>
+            <Pane prefHeight="117.0" prefWidth="256.0">
+               <children>
+                  <ImageView fitHeight="165.0" fitWidth="256.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Exchange.png12.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="prodbt" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#go_to_prod" prefHeight="55.0" prefWidth="302.0" style="-fx-background-color: #1b98e00d;" text="Produit" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="catbtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#go_to_cat" prefHeight="55.0" prefWidth="302.0" style="-fx-background-color: #1b98e00d;" text="Categorie" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#go_to_user" prefHeight="55.0" prefWidth="302.0" style="-fx-background-color: #1b98e00d;" text="USER" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="event" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#go_to_event" prefHeight="55.0" prefWidth="302.0" style="-fx-background-color: #1b98e00d;" text="evnement" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="levrision" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#go_to_livridipon" prefHeight="55.0" prefWidth="302.0" style="-fx-background-color: #1b98e00d;" text="levrision" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="livrure" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#go_to_livreuru" prefHeight="55.0" prefWidth="302.0" style="-fx-background-color: #1b98e00d;" text="livreuru" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="dsfdsdfssdf" mnemonicParsing="false" onAction="#dsfffsd" text="Button" />
+            <Button fx:id="dffdfd" mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="445.0" fitWidth="481.0" layoutX="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ddd1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="339.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" wrappingWidth="314.197265625">
+         <font>
+            <Font name="Courier New" size="48.0" />
+         </font>
+      </Text>
+      <Separator layoutX="256.0" layoutY="399.0" prefHeight="19.0" prefWidth="481.0" />
+      <Separator layoutX="256.0" layoutY="465.0" prefHeight="19.0" prefWidth="481.0" />
+      <Separator layoutX="256.0" layoutY="517.0" prefHeight="19.0" prefWidth="481.0" />
+   </children>
+</AnchorPane>
